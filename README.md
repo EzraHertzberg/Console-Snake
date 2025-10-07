@@ -1,12 +1,12 @@
-# Console-Snake
-A console-based snake game programmed in Python using no external libraries. Yes, you heard me right, this game is entirely playable in the console.
+# Python-Console-Snake
+A console-based snake game programmed in Python. Yes, you heard me right, this game is entirely playable in the console. The Python code uses no external libraries.
 
 <br>
 Requirements:
 <br>
 Windows. I haven't tested this outside of the Windows operating system.
 <br>
-Python. This game is a Python executable. Make sure Python is installed on your computer to play.
+Python. This game is a Python script. Make sure Python is installed on your computer to play.
 <br>
 <br>
 How to Run The Game:
