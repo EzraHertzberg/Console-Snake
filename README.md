@@ -4,6 +4,7 @@ A console based snake game programmed in python using no external libraries.
 
 Computer requirements:
 Windows. I haven't tested this outside of the windows oporating system.
+<br>
 Python, you must have python installed on your computer to play this game.
 
 How to play:
