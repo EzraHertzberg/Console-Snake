@@ -11,9 +11,12 @@ Python. This game is a Python executable. Make sure Python is installed on your 
 <br>
 How to Run The Game:
 <br>
-1. Install game file to your computer.<br>
+1. Download game file to your computer.<br>
+<br> Either download the .py file from this link or the repo <br
+https://raw.githubusercontent.com/EzraHertzberg/Console-Snake/refs/heads/main/snake_game.py<br><br>
 2. Open up console window<br> 
-3. enter <br>>>>python snake_game.py <br>into your console (python must be installed)
+3. enter <br>
+>>>python snake_game.py <br>into your console (python must be installed)
 <br><br>
 How to play: <br>
 Use arrow keys or wasd to move <br>
