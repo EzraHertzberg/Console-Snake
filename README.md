@@ -11,6 +11,6 @@ Python, you must have python installed on your computer to play this game.
 <br>
 How to play:
 <br>
-1. Install game file to your computer.
-2. Open up console window
-3. enter >>>python snake_game.py into your console (python must be installed)
+1. Install game file to your computer.<br>
+2. Open up console window<br>
+3. enter <br>>>>python snake_game.py <br>into your console (python must be installed)
