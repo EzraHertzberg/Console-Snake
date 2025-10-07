@@ -12,5 +12,5 @@ Python. This game is a Python executable. Make sure Python is installed on your 
 How to play:
 <br>
 1. Install game file to your computer.<br>
-2. Open up console window<br>
+2. Open up console window<br> 
 3. enter <br>>>>python snake_game.py <br>into your console (python must be installed)
