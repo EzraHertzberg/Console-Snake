@@ -6,7 +6,7 @@ Requirements:
 <br>
 Windows. I haven't tested this outside of the windows operating system.
 <br>
-Python. This game is a Python executable. Make sure python is installed on your computer to play.
+Python. This game is a Python executable. Make sure Python is installed on your computer to play.
 <br>
 <br>
 How to play:
