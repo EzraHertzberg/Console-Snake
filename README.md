@@ -2,11 +2,11 @@
 A console based snake game programmed in python using no external libraries. 
 
 <br>
-Computer requirements:
+Requirements:
 <br>
 Windows. I haven't tested this outside of the windows operating system.
 <br>
-Python, you must have python installed on your computer to play this game.
+Python. This game is a Python executable. Make sure python is installed on your computer to play.
 <br>
 <br>
 How to play:
