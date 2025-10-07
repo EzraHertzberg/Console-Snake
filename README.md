@@ -11,7 +11,7 @@ Python. This game is a Python executable. Make sure Python is installed on your 
 <br>
 How to Run The Game:
 <br>
-1. Download game file to your computer. One way to do this is to click on the snake_game.py file in this repository, and then clicking download raw file<br>
+1. Download game file to your computer. One way to do this is to click on the snake_game.py file in this repository, and then click download raw file<br>
 2. Open up console window<br> 
 3. Navigate to the directory that has the snake_game.py file in it <br>
 4. enter <br>
