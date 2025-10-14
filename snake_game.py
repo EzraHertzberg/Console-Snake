@@ -6,7 +6,7 @@ import random
 
 
 size = os.get_terminal_size()
-screen_width = size.columns 
+screen_width = size.columns //2  
 screen_height = size.lines -3
 char = ""
 player_x = screen_width//2
@@ -90,11 +90,11 @@ def game_update():
             row_arr = []
             for i in range(screen_width):
                 if(j == 2 or j == screen_height - 2):
-                    row_arr.append("-")
+                    row_arr.append("--")
                 elif(i== 2 or i == screen_width - 2):
                     row_arr.append("|")
                 else:
-                    row_arr.append(" ")
+                    row_arr.append("  ")
             grid.append(row_arr)
         
         #apple logic
@@ -109,13 +109,13 @@ def game_update():
             past_positions.pop()
                         
         for i in range(len(past_positions)):
-            grid[past_positions[i][0]][past_positions[i][1]] = "~"
+            grid[past_positions[i][0]][past_positions[i][1]] = "██"
        
         ##draw snake head
-        grid[player_y][player_x] = "#"
+        grid[player_y][player_x] = "██"
         
         #draw app
-        grid[apple_y][apple_x] = "@"
+        grid[apple_y][apple_x] = "()"
         print(f"{'score':>10} {score}")
         for i in range(screen_height):
                 print("".join(grid[i]))
