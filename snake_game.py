@@ -22,7 +22,7 @@ highscore = 0
 #message = "Press any key to start"
 
 try:
-    with open("high_score.txt") as f:
+    with open("highscore.txt") as f:
         s = f.read()
         highscore = int(s)
 except FileNotFoundError:
@@ -60,7 +60,7 @@ def user_inp():
 
     
 def game_update():
-    global player_x, player_y, apple_x, high_score, apple_y, char, running, past_positions, score, direction, lost
+    global player_x, player_y, apple_x, highscore, apple_y, char, running, past_positions, score, direction, lost
     while running:
         # Clear the console
         print("\033[H", end="")
@@ -135,11 +135,13 @@ def game_update():
             inp = input("enter anything to try again or q to quit: ")
             
             try:
-                with open("high_score.txt") as f:
-                    s = f.read()
-                    print (s)
+                with open("highscore.txt") as f:
+                    hs = int(f.read())
+                    if(hs < score):
+                        with open("highscore.txt", "w") as f:
+                            f.write(str(score))                        
             except FileNotFoundError:
-                with open("high_score.txt", "w") as f:
+                with open("highscore.txt", "w") as f:
                     f.write(str(score))
             
             if(inp == "q"):
@@ -156,6 +158,9 @@ def game_update():
                 lost = False
                 running = True   
                 os.system("cls")
+                with open("highscore.txt") as f:
+                    s = f.read()
+                    highscore = int(s)
         time.sleep((0.2)/(1+score/5))
     
 if __name__ == "__main__":
