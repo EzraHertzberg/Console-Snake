@@ -17,9 +17,17 @@ score = 0
 running = True
 apple_x = random.randint(3,screen_width-3)
 apple_y = random.randint(3,screen_height-3)
-
 lost = False
+highscore = 0
 #message = "Press any key to start"
+
+try:
+    with open("high_score.txt") as f:
+        s = f.read()
+        highscore = int(s)
+except FileNotFoundError:
+    print("filenotfound")
+
 
 def user_inp():
     global char, running
@@ -52,7 +60,7 @@ def user_inp():
 
     
 def game_update():
-    global player_x, player_y, apple_x, apple_y, char, running, past_positions, score, direction, lost
+    global player_x, player_y, apple_x, high_score, apple_y, char, running, past_positions, score, direction, lost
     while running:
         # Clear the console
         print("\033[H", end="")
@@ -116,13 +124,24 @@ def game_update():
         
         #draw app
         grid[apple_y][apple_x] = "()"
-        print(f"{'score':>10} {score}")
+        print(f"{'score':>10} {score}", end = " ")
+        
+        print(f"{'highscore':>{(screen_width*2) - 25}} {highscore}")
         for i in range(screen_height):
                 print("".join(grid[i]))
         print("\033[J", end="")
         if lost:
             print(f"Game Over, you have a score of {score}")
             inp = input("enter anything to try again or q to quit: ")
+            
+            try:
+                with open("high_score.txt") as f:
+                    s = f.read()
+                    print (s)
+            except FileNotFoundError:
+                with open("high_score.txt", "w") as f:
+                    f.write(str(score))
+            
             if(inp == "q"):
                 running = False
             else:
