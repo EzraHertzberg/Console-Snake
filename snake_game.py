@@ -131,9 +131,6 @@ def game_update():
                 print("".join(grid[i]))
         print("\033[J", end="")
         if lost:
-            print(f"Game Over, you have a score of {score}")
-            inp = input("enter anything to try again or q to quit: ")
-            
             try:
                 with open("highscore.txt") as f:
                     hs = int(f.read())
@@ -142,8 +139,9 @@ def game_update():
                             f.write(str(score))                        
             except FileNotFoundError:
                 with open("highscore.txt", "w") as f:
-                    f.write(str(score))
-            
+                    f.write(str(score))                
+            print(f"Game Over, you have a score of {score}")
+            inp = input("enter anything to try again or q to quit: ")
             if(inp == "q"):
                 running = False
             else:
