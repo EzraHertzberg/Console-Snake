@@ -4,7 +4,7 @@ A console-based snake game programmed in Python. Yes, you heard me right, this g
 <br>
 Requirements:
 <br>
-Windows. I haven't tested this outside of the Windows operating system.
+Windows. I haven't tested this outside of the Windows operating system. I'm pretty sure it won't work because this program is reliant on msvcrt
 <br>
 Python. This game is a Python script. Make sure Python is installed on your computer to play.
 <br>
